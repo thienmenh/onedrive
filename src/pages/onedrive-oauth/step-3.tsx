@@ -221,7 +221,7 @@ export async function getServerSideProps({ query }) {
       },
     }
   }
-  if (data.userPrincipalName !== siteConfig.userPrincipalName) {
+  if (data.name !== siteConfig.name) {
     return {
       props: {
         error: "Do not pretend to be the owner!",
